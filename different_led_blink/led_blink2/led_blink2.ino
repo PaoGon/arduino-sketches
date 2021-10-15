@@ -1,5 +1,5 @@
-int pins[] = {6, 7, 8};                             //initialize array of pins
-int length = sizeof(pins)/sizeof(int);              //get the length of the array
+const int pins[] = {6, 7, 8};                       //initialize array of pins
+const int length = sizeof(pins)/sizeof(int);        //get the length of the array
 
 void setup() {
     for(int pin=0; pin < length; pin++){            //set all pins pinMODE to OUTPUT
