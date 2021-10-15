@@ -10,7 +10,7 @@ void setup() {
 void loop() {
     for(int pin=0; pin < length; pin++){            //linearly scan through the pins
         digitalWrite(pins[pin], 1);                 //turn on the current pin
-        delay(500);                                 //time interval
+        delay(500);                                 //sets time interval
         digitalWrite(pins[pin], 0);                 //turn off the current pin
     }
 
