@@ -9,14 +9,16 @@ void setup() {
 }
 
 void loop() {
-    int delayTime = analogRead(pot_pin);                //get the value of the potetiometer and store it to a variable
+    int delayTime;                                     //get the value of the potetiometer and store it to a variable
 
-    for(int pin=0; pin < length; pin++){                //linearly scan through the pins
+    for(int pin=0; pin < length; pin++){               //linearly scan through the pins
+      	delayTime = analogRead(pot_pin);
         digitalWrite(pins[pin], 1);                     //turn on the current pin
         delay(delayTime);                               //then wait for the value of delayTime
     }
 
-    for(int pin = length-1; pin >= 0; pin--){           //linearly scan through the pins 
+    for(int pin = length-1; pin >= 0; pin--){           //linearly scan through the pinS
+      	delayTime = analogRead(pot_pin);
         digitalWrite(pins[pin], 0);                     //turn off the current pin
         delay(delayTime);                               //then wait for the value of delayTime
     }            
