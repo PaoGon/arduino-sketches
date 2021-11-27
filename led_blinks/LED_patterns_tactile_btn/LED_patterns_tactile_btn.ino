@@ -591,7 +591,6 @@ void loop() {
 
   check_state();
   
-
     if (counter == 1) {
         pattern1();
     }
